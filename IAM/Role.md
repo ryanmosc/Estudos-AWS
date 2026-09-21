@@ -21,6 +21,9 @@
 | **Pertence a Grupos?** | Sim | Não |
 | **Casos de Uso** | Pessoas (ex: `ryan`) | Serviços, automações e acesso entre contas |
 
+
+
+
 O usuário representa uma identidade permanente (tem senha, etc.); ele pertence a grupos que possuem suas políticas ou pode ter políticas exclusivas.
 
 A role representa uma identidade assumível e temporária (não tem senha). Ela pode ser assumida.
@@ -123,3 +126,6 @@ Ex:
 
 Ex: A instancia EC2 precisa acessar um GetObject de um S3 e ele assume uma Role que tem dentro dela a Policy de GetObject do S3 em questão.
 
+# Role = Tem tempo de expiração.
+![](images/Pasted_image_20260921150530.png)
+ 
