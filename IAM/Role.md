@@ -22,7 +22,20 @@
 | **Casos de Uso** | Pessoas (ex: `ryan`) | Serviços, automações e acesso entre contas |
 
 
-
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "spotfleet.amazonaws.com" - O " * " não é aceito
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
 
 O usuário representa uma identidade permanente (tem senha, etc.); ele pertence a grupos que possuem suas políticas ou pode ter políticas exclusivas.
 
@@ -129,3 +142,4 @@ Ex: A instancia EC2 precisa acessar um GetObject de um S3 e ele assume uma Role 
 # Role = Tem tempo de expiração.
 ![](images/Pasted_image_20260921150530.png)
  
+
