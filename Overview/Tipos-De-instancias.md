@@ -1,5 +1,13 @@
 # TIPOS DE INSTANCIA
 
+| Col 1 | Col 2 |
+| --- | --- |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+
+
 O tipo de instancia é responsavel por ditar quanto de CPU, Memoria RAM, Disco e rede a VM irá ter.
 
 **Como ler um tipo de instancia**
@@ -44,7 +52,6 @@ Obs: O "g" significa o tipo de processador que está sendo utiliziado.
 g = ARM (Graviton) - Processador da AWS
 
 i = Intel
-
 a = AMD
 
 TAMANHO - É o tamanho 
@@ -73,8 +80,9 @@ xlarge
 
 24xlarge...
 
-RESUMO:
-T → econômica para cargas leves e desenvolvimento.
-M → uso geral (a escolha mais comum).
-C → foco em processamento.                          
-R → foco em memória.
+| Sigla | Definição |
+| --- | --- |
+| T | econômica para cargas leves e desenvolvimento. |
+| M | uso geral (a escolha mais comum). |
+| C | foco em processamento. |
+| R | foco em memória. |

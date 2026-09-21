@@ -24,12 +24,13 @@ Quando utilizar:
 
 **Saving Planes**
 Nesta modalidade você tem preços flexiveis em troca de um compromisso de uso especifico (Tanto faz oq vc for fazer) medido em horas por um periodo entre 1 a 3 anos. (Voce se compromete a utilizar a instancia durante x horas por x periodo) (AWS eu me comprometo a utilizar 0,20 por hora durante 2 anos. Usou menos = pagou 0,20 Usou mais = pagou 0,20 + o tanto que usou)
-Temos 3 tipos de Saving Plans:
+
+**Temos 3 tipos de Saving Plans:**
 - Saving Plans para computação (Fargate, EC2 e Lambda) economia de até 66% 
 - Saving Plans para EC2 economia de até 72%
 - Saving planes do Sagermaker economia de até 64%
 
-Analogia:
+**Analogia:**
 Imagine uma academia.
 Você paga uma mensalidade de R$ 150.
 Se você for todos os dias, ótimo.
@@ -39,6 +40,7 @@ O Savings Plan funciona de forma parecida: você paga pelo compromisso assumido,
                                 
 **Spot Instances**
 Esta modalidade é a mais barata da AWS. A AWS como empresa, possui serviços ocisosos (Parados) e que podem ser realocados. O ponto negativo é que a AWS pode parar quando quiser este serviço (Ela manda ums msg 2 mnts antes do serviço ser excluido).
+
 Quando usar:
 - Processamento em lote (batch)
 - Renderização

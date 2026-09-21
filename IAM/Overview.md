@@ -22,17 +22,13 @@ Disponibilidade Global: O IAM é um serviço global e replicado entre regiões, 
   
 - Usuários do AWS IAM Identity Center: Entram pelo Portal de Acesso da AWS utilizando o diretório padrão (nome de usuário e senha).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 Usuário do IAM: Autentica-se pelo ID/alias da conta, nome de usuário e senha. Para automações via API/CLI, utiliza credenciais temporárias (assumindo perfis) ou credenciais de longo prazo (chaves de acesso/secretas).
+
+## MFA (Multi-Factor Authentication)
+é um mecanismo de segurança indispensável que adiciona uma camada extra de proteção ao processo de login na AWS.
+
+Em vez de depender apenas de um fator de autenticação (como nome de usuário e senha), o MFA exige que o usuário forneça dois ou mais fatores de verificação para conceder o acesso:
+
+Algo que você sabe: Sua senha de acesso ou PIN.
+
+Algo que você tem: Um aplicativo autenticador no smartphone (ex: Google Authenticator, Authy) gerando um código TOTP temporário, uma chave de segurança física (FIDO2/WebAuthn como YubiKey) ou um token de hardware.
