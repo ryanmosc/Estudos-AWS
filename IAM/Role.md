@@ -152,3 +152,12 @@ Ex: A instancia EC2 precisa acessar um GetObject de um S3 e ele assume uma Role 
 ![](images/Pasted_image_20260921170136.png)
 
 ![](images/Pasted_image_20260922080246.png)
+
+## Como criar uma IAM Role (Cross acount)
+
+![](images/Pasted_image_20260922090013.png)
+
+![](images/Pasted_image_20260922090127.png)
+
+**IMPORTANTE:**
+A outra conta deve assumir esta role para ter os acessos. 
