@@ -143,3 +143,12 @@ Ex: A instancia EC2 precisa acessar um GetObject de um S3 e ele assume uma Role 
 ![](images/Pasted_image_20260921150530.png)
  
 
+
+## Como criar uma IAM Role (Para Entidades)
+![](images/Pasted_image_20260921165958.png)
+
+![](images/Pasted_image_20260921170023.png)
+
+![](images/Pasted_image_20260921170136.png)
+
+![](images/Pasted_image_20260922080246.png)
