@@ -1,12 +1,5 @@
 # TIPOS DE INSTANCIA
 
-| Col 1 | Col 2 |
-| --- | --- |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-
 
 O tipo de instancia é responsavel por ditar quanto de CPU, Memoria RAM, Disco e rede a VM irá ter.
 
@@ -85,4 +78,3 @@ xlarge
 | T | econômica para cargas leves e desenvolvimento. |
 | M | uso geral (a escolha mais comum). |
 | C | foco em processamento. |
-| R | foco em memória. |
