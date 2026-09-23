@@ -1,5 +1,6 @@
 # Subnets
 Subredes / subnets são divisões dentro de sua VPC. Supomos que você setou o bloco CIDR 10.0.0.0/16, voce possui milhares de IPS disponiveis, o ideal seria fazer uma divisão deles e distribuir entre responsabilidades.
+**Obs:** Uma VPC pode ter até 200 subnets, com o tamanho máximo do bloco CIDR sendo de /16.
 
 **EXEMPLO:**
 
@@ -78,3 +79,6 @@ subrede: **10.0.0.10/16**
 | /28  |           16 |                 11 |
 
 A máscara da subnet deve ser maior (mais específica) do que a máscara da VPC
+
+
+
