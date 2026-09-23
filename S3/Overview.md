@@ -53,3 +53,13 @@ IDEIA DE ARQUITETURA
                            (Fotos, PDFs, Vídeos)
 ```
 
+## Criptografia
+
+**Lado servidor:**
+- SSE-S3
+- SSE-KMS
+- DSSE-KMS
+- SSE-C
+
+**Lado cliente:**
+- Client Side
