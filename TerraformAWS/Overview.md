@@ -27,3 +27,6 @@ E o Terraform transforma essa configuração em recursos reais na AWS.
 - Menos configuração manual
 - Facilidade para recriar ambientes
 - Infraestrutura documentada como código
+
+## Configuração inicial 
+- Inicialmente você deve configurar a AWS CLI em seu terminal.
