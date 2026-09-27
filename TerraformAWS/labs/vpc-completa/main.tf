@@ -30,15 +30,15 @@ resource "aws_eip" "documentacao_eip" {
 }
 
 
-#================================================================================================
+#===============================================================================================
 #Criação das Subnets 
-#================================================================================================
+#===============================================================================================
 
 #Subnet pública A
 resource "aws_subnet" "documentacao_subnet_publica_A" {
   vpc_id            = aws_vpc.documentacao_vpc.id
-  cidr_block        = "10.0.1.0/24"
-  availability_zone = "us-east-1a"
+  cidr_block        = var.cidr_public_subnet_A
+  availability_zone = var.availability_zone_subnet_public_A
 
   tags = {
     Name = "documentacao_subnet_publica_A"
@@ -48,8 +48,8 @@ resource "aws_subnet" "documentacao_subnet_publica_A" {
 #Subnet pública B
 resource "aws_subnet" "documentacao_subnet_publica_B" {
   vpc_id            = aws_vpc.documentacao_vpc.id
-  cidr_block        = "10.0.2.0/24"
-  availability_zone = "us-east-1c"
+  cidr_block        = var.cidr_public_subnet_B
+  availability_zone = var.availability_zone_subnet_public_B
 
   tags = {
     Name = "documentacao_subnet_publica_B"
@@ -59,8 +59,8 @@ resource "aws_subnet" "documentacao_subnet_publica_B" {
 #Subnet privada A
 resource "aws_subnet" "documentacao_subnet_privada_A" {
   vpc_id            = aws_vpc.documentacao_vpc.id
-  cidr_block        = "10.0.10.0/24"
-  availability_zone = "us-east-1a"
+  cidr_block        = var.cidr_private_subnet_A
+  availability_zone = var.availability_zone_subnet_private_A
 
   tags = {
     Name = "documentacao_subnet_privada_A"
@@ -70,8 +70,8 @@ resource "aws_subnet" "documentacao_subnet_privada_A" {
 #Subnet privada B
 resource "aws_subnet" "documentacao_subnet_privada_B" {
   vpc_id            = aws_vpc.documentacao_vpc.id
-  cidr_block        = "10.0.11.0/24"
-  availability_zone = "us-east-1c"
+  cidr_block        = var.cidr_private_subnet_B
+  availability_zone = var.availability_zone_subnet_private_B
 
   tags = {
     Name = "documentacao_subnet_privada_B"
