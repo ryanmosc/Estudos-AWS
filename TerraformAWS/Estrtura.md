@@ -1,4 +1,5 @@
 # Arquitetura básica de um projeto Terraform
+Obs: Você pode colocar tudo na main.tf.
 
 ```
 terraform-ec2/
