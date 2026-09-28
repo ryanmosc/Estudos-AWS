@@ -55,3 +55,32 @@ Cluster
                         │
                 Amazon RDS / S3
 ```
+
+
+
+```
+ALB DEV
+Cluster: dev-cluster
+ ├── Service: frontend-service
+ ├── Service: backend-service
+ └── Service: worker-service (se tiver)
+
+ALB HOMOLOGAÇÂO
+Cluster: hml-cluster (homologação)
+ ├── Service: frontend-service
+ ├── Service: backend-service
+ └── Service: worker-service
+
+ALB PROD
+Cluster: prod-cluster
+ ├── Service: frontend-service
+ ├── Service: backend-service
+ └── Service: worker-service
+
+```
+
+
+**IMPORTANTE:**
+- o Target Group deve ser do tipo IP
+- Deve criar um TG para o front e um TG para back e etc...
+- Para cada subdominio deve haver um Listen Rule no ALB
